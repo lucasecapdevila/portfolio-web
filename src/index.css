@@ -9,3 +9,10 @@
 body{
   background: #F4F4F4;
 }
+
+.CvBtn span{
+  background-color: #F4F4F4;
+  color: #61dbfb;
+  font-size: 1.25rem; /* 20px */
+  line-height: 1.75rem; /* 28px */
+}
