@@ -1,5 +1,6 @@
 import { Button } from "flowbite-react"
 import imagen from "../../assets/lucas.jpg"
+import pdf from "../../public/CVLucasCapdevila-prog.pdf"
 import { Link } from "react-router-dom"
 
 const Home = () => {
@@ -18,7 +19,9 @@ const Home = () => {
           </div>
           <p className="text-textBlack text-lg text-center font-normal content-end mt-4">Soy un apasionado desarrollador web especializado en Stack MERN con experiencia creando aplicaciones web con React.js, Node/Express y MongoDB. Estoy muy interesado en aprender nuevas tecnologías para implementarlas en mis proyectos.</p>
         </div>
-      <Button as={Link} pill outline className="CvBtn mx-4 mt-4 bg-black border-4 border-reactLightBlue p-0 text-reactLightBlue font-bold">Descargar CV</Button>
+        <a href={pdf} download className="mx-4 mt-4 justify-center">
+          <Button pill outline className="cvBtn w-full bg-black border-4 border-reactLightBlue p-0 text-reactLightBlue font-bold">Descargar CV</Button>
+        </a>
       </div>
     </main>
   )
