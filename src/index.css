@@ -1,6 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&family=Lato:wght@100;400&family=Poppins&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.titulos{
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+}
+
+.enlaces{
+  font-family: "Fredoka", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.textos{
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
 
 #root{
   min-height: 100vh;
