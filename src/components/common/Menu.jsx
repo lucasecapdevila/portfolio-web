@@ -3,7 +3,6 @@ import {
   faEnvelope,
   faFlag,
   faFolder,
-  faHouseChimney,
   faMoon,
   faPhone,
   faScrewdriverWrench,
@@ -27,7 +26,7 @@ const Menu = () => {
           data-drawer-toggle="logo-sidebar"
           aria-controls="logo-sidebar"
           type="button"
-          className="inline-flex items-center p-2 m-3 text-sm text-gray-500 lg:hidden bg-whiteBg rounded-full  hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          className="inline-flex items-center p-2 m-3 text-sm text-gray-500 lg:hidden bg-whiteBg rounded-full  focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
         >
           <span className="sr-only">Open sidebar</span>
           <svg
@@ -51,67 +50,87 @@ const Menu = () => {
         className="enlaces fixed h-screen top-0 left-0 z-40 w-64 md:w-80 transition-transform -translate-x-full lg:translate-x-0"
         aria-label="Sidebar"
       >
-        <div className="flex flex-col px-3 py-2 h-full overflow-y-auto bg-reactLightBlue">
-          <Link to="/" className="flex ms-3 md:me-24">
+        <div className="flex flex-col px-3 py-2 h-full overflow-y-auto bg-reactDarkBlue md:w-11/12 lg:w-1/3">
+          <Link to="/" className="flex mt-3 ms-3 md:me-24 lg:me-0">
             <img
               src={logo}
               className="size-16 me-3"
               alt="lucasecapdevila logo"
             />
           </Link>
-          <ul className="flex-grow ms-3 mt-10 space-y-2 md:space-y-4 font-medium text-lg">
-            <li>
-              <Link
-                to="/"
-                className="flex items-center text-xl p-2 ps-0 text-textBlack rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
-              >
-                <FontAwesomeIcon icon={faHouseChimney} className="text-2xl" />
-                <span className="ms-3">Inicio</span>
-              </Link>
-            </li>
+          <ul className="flex-grow ms-3 lg:ms-0 mt-20 space-y-2 md:space-y-4 font-medium text-lg">
             <li>
               <Link
                 to="/about"
-                className="flex items-center text-xl p-2 ps-0 text-textBlack rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+                className="flex items-center text-xl p-2 ps-0 text-textBlack rounded-lg dark:text-white dark:hover:bg-gray-700 group lg:justify-center"
               >
-                <FontAwesomeIcon icon={faUser} className="text-2xl" />
-                <span className="ms-4">Sobre mí</span>
+                <div className="relative group">
+                  <FontAwesomeIcon
+                    icon={faUser}
+                    className="text-2xl relative"
+                  />
+                  <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-max opacity-0 group-hover:opacity-100 transition-opacity bg-gray-800 text-white text-sm rounded px-2 py-1">
+                    Sobre mí
+                  </span>
+                </div>
+                <span className="ms-4 lg:hidden">Sobre mí</span>
               </Link>
             </li>
             <li>
               <Link
                 to="/skills"
-                className="flex items-center text-xl p-2 ps-0 text-textBlack rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+                className="flex items-center text-xl p-2 ps-0 text-textBlack rounded-lg dark:text-white dark:hover:bg-gray-700 group lg:justify-center"
               >
-                <FontAwesomeIcon
-                  icon={faScrewdriverWrench}
-                  className="text-2xl"
-                />
-                <span className="ms-4">Habilidades</span>
+                <div className="relative group">
+                  <FontAwesomeIcon
+                    icon={faScrewdriverWrench}
+                    className="text-2xl relative"
+                  />
+                  <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-max opacity-0 group-hover:opacity-100 transition-opacity bg-gray-800 text-white text-sm rounded px-2 py-1">
+                    Habilidades
+                  </span>
+                </div>
+                <span className="ms-4 lg:hidden">Habilidades</span>
               </Link>
             </li>
             <li>
               <Link
                 to="/projects"
-                className="flex items-center text-xl p-2 ps-0 text-textBlack rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+                className="flex items-center text-xl p-2 ps-0 text-textBlack rounded-lg dark:text-white dark:hover:bg-gray-700 group lg:justify-center"
               >
-                <FontAwesomeIcon icon={faFolder} className="text-2xl" />
-                <span className="ms-4">Proyectos</span>
+                <div className="relative group">
+                  <FontAwesomeIcon
+                    icon={faFolder}
+                    className="text-2xl relative"
+                  />
+                  <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-max opacity-0 group-hover:opacity-100 transition-opacity bg-gray-800 text-white text-sm rounded px-2 py-1">
+                    Proyectos
+                  </span>
+                </div>
+                <span className="ms-4 lg:hidden">Proyectos</span>
               </Link>
             </li>
             <li>
               <Link
                 to="/contact"
-                className="flex items-center text-xl p-2 ps-0 text-textBlack rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+                className="flex items-center text-xl p-2 ps-0 text-textBlack rounded-lg dark:text-white dark:hover:bg-gray-700 group lg:justify-center"
               >
-                <FontAwesomeIcon icon={faPhone} className="text-2xl" />
-                <span className="ms-4">Contacto</span>
+                <div className="relative group">
+                  <FontAwesomeIcon
+                    icon={faPhone}
+                    className="text-2xl relative"
+                  />
+                  <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-max opacity-0 group-hover:opacity-100 transition-opacity bg-gray-800 text-white text-sm rounded px-2 py-1">
+                    Contacto
+                  </span>
+                </div>
+                <span className="ms-4 lg:hidden">Contacto</span>
               </Link>
             </li>
             {/* <li>
               <Link
                 to="/"
-                className="flex items-center text-xl p-2 ps-0 text-textBlack rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+                className="flex items-center text-xl p-2 ps-0 text-textBlack rounded-lg dark:text-white dark:hover:bg-gray-700 group"
               >
                 <FontAwesomeIcon icon={faFlag} className="text-2xl" />
                 <span className="ms-4">EN/ES</span>
@@ -120,7 +139,7 @@ const Menu = () => {
             <li>
               <Link
                 to="/"
-                className="flex items-center text-xl p-2 ps-0 text-textBlack rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group"
+                className="flex items-center text-xl p-2 ps-0 text-textBlack rounded-lg dark:text-white dark:hover:bg-gray-700 group"
               >
                 <FontAwesomeIcon className="text-2xl me-4" icon={faSun} />
                 <FontAwesomeIcon icon={faMoon} className="text-2xl" />
@@ -128,22 +147,30 @@ const Menu = () => {
               </Link>
             </li> */}
           </ul>
-          <ul className="ms-3 md:columns-2 space-y-4 font-medium text-lg">
+          <ul className="ms-3 lg:ms-0 md:columns-2 lg:columns-1 space-y-4 font-medium text-lg">
             <li>
-              <Link to="mailto:lcapdevila60@gmail.com?subject=FullStack Portfolio&body=Hola ! Vi tu portfolio y me interesan tus servicios.">
+              <Link
+                to="mailto:lcapdevila60@gmail.com?subject=FullStack Portfolio&body=Hola ! Vi tu portfolio y me interesan tus servicios."
+                className="flex items-center text-xl p-2 ps-0 text-textBlack rounded-lg dark:text-white dark:hover:bg-gray-700 group lg:justify-center hvr-pop"
+              >
                 <FontAwesomeIcon icon={faEnvelope} className="text-3xl" />
               </Link>
             </li>
             <li>
               <Link
                 to="https://www.linkedin.com/in/lucasecapdevila/"
+                className="flex items-center text-xl p-2 ps-0 text-textBlack rounded-lg dark:text-white dark:hover:bg-gray-700 group lg:justify-center hvr-pop"
                 target="_blank"
               >
                 <FontAwesomeIcon icon={faLinkedin} className="text-3xl" />
               </Link>
             </li>
             <li>
-              <Link to="https://github.com/lucasecapdevila" target="_blank">
+              <Link
+                to="https://github.com/lucasecapdevila"
+                target="_blank"
+                className="flex items-center text-xl p-2 ps-0 text-textBlack rounded-lg dark:text-white dark:hover:bg-gray-700 group lg:justify-center hvr-pop"
+              >
                 <FontAwesomeIcon icon={faGithub} className="text-3xl" />
               </Link>
             </li>
@@ -151,6 +178,7 @@ const Menu = () => {
               <Link
                 to="https://www.instagram.com/lucasecapdevila/"
                 target="_blank"
+                className="flex items-center text-xl p-2 ps-0 text-textBlack rounded-lg dark:text-white dark:hover:bg-gray-700 group lg:justify-center hvr-pop"
               >
                 <FontAwesomeIcon icon={faInstagram} className="text-3xl" />
               </Link>
