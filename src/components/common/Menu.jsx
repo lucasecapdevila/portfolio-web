@@ -16,12 +16,20 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import logo from "../../assets/logo-black2.png";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const Menu = () => {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false)
+
+  const toggleSidebar = () => {
+    setIsSidebarOpen(!isSidebarOpen);
+  };
+
   return (
     <>
       <div className="md:bg-reactLightBlue flex justify-end fixed top-0 left-0 z-40">
         <button
+          onClick={toggleSidebar}
           data-drawer-target="logo-sidebar"
           data-drawer-toggle="logo-sidebar"
           aria-controls="logo-sidebar"
