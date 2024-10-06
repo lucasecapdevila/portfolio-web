@@ -20,7 +20,7 @@ import { Link } from "react-router-dom";
 const Menu = () => {
   return (
     <>
-      <div className="bg-reactLightBlue flex justify-end fixed top-0 left-0 z-40">
+      <div className="md:bg-reactLightBlue flex justify-end fixed top-0 left-0 z-40">
         <button
           data-drawer-target="logo-sidebar"
           data-drawer-toggle="logo-sidebar"
