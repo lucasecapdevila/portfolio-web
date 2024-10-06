@@ -11,9 +11,11 @@ export async function getStaticProps() {
 const AppRouter = () => {
   return (
     <BrowserRouter>
-      <Menu />
+      
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/*" element={<Menu />}>
+          <Route path="/" element={<Home />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   )
