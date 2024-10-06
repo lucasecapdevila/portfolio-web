@@ -12,9 +12,9 @@ const Home = () => {
           src={imagen}
           className="absolute inset-0 size-64 md:size-80 xl:size-96 rounded-full object-cover mx-auto my-auto transform -translate-x-0 -translate-y-3/4 md:-translate-x-1/3 md:-translate-y-1 xl:-translate-x-1/2"
           alt="lucasecapdevila" />
-        <div className="w-full md:w-1/2 xl:w-3/5 flex flex-col justify-center items-center md:items-start mt-36 md:mt-0 bg-whiteBg">
+        <div className="w-full md:w-1/2 xl:w-3/5 flex flex-col justify-center items-center md:items-start mt-10 md:mt-0 bg-whiteBg">
           <div className="flex flex-col-reverse justify-center items-center md:items-start md:ms-20 xl:ms-72">
-            <h1 className="text-textBlack text-3xl font-bold">Lucas Capdevila</h1>
+            <h1 className="text-textBlack text-4xl font-bold">Lucas Capdevila</h1>
             <h2 className="text-textBlack text-2xl font-bold">Fullstack Developer</h2>
           </div>
           <p className="textos text-textBlack text-lg text-center md:text-left font-normal content-end px-2 md:ps-0 md:pe-2 mt-4 md:ms-20 md:mb-20 xl:ms-72 xl:mb-20">Soy un apasionado desarrollador web especializado en Stack MERN con experiencia creando aplicaciones web con React.js, Node/Express y MongoDB. Estoy muy interesado en aprender nuevas tecnologías para implementar en mis proyectos.</p>
