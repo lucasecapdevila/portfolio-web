@@ -39,7 +39,7 @@ const Menu = () => {
 
   return (
     <>
-      <div className="md:bg-reactLightBlue flex justify-end fixed top-0 left-0 z-40">
+      <div className=" flex justify-end fixed top-0 left-0 z-40">
         <button
           onClick={toggleSidebar}
           data-drawer-target="logo-sidebar"
