@@ -22,6 +22,8 @@ const Menu = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false)
 
   const toggleSidebar = () => {
+    console.log('Funciona');
+    
     setIsSidebarOpen(!isSidebarOpen);
   };
 
@@ -55,7 +57,7 @@ const Menu = () => {
 
       <aside
         id="logo-sidebar"
-        className="enlaces fixed h-screen top-0 left-0 z-40 w-64 md:w-80 transition-transform -translate-x-full lg:translate-x-0"
+        className={`enlaces fixed h-screen top-0 left-0 z-40 w-64 md:w-80 transition-transform ${isSidebarOpen ? "translate-x-0" : "translate-x-full"} lg:translate-x-0`}
         aria-label="Sidebar"
       >
         <div className="flex flex-col px-3 py-2 h-full overflow-y-auto bg-reactDarkBlue md:w-11/12 lg:w-1/3">
