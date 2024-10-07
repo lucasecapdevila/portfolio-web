@@ -5,14 +5,14 @@ import { Link } from "react-router-dom"
 
 const Home = () => {
   return (
-    <main className="min-h-[95vh]">
+    <main className="min-h-[90vh]">
       <div className="relative flex flex-col md:flex-row h-full">
         <div className="w-full md:w-1/2 xl:w-2/5 h-2/5 md:h-full md:bg-reactLightBlue"></div>
         <img
           src={imagen}
           className="absolute inset-0 size-60 md:size-80 xl:size-96 rounded-full object-cover mx-auto my-auto transform -translate-x-0 -translate-y-3/4 md:-translate-x-1/3 md:-translate-y-1 xl:-translate-x-1/2"
           alt="lucasecapdevila" />
-        <div className="w-full md:w-1/2 xl:w-3/5 flex flex-col grow gap-4 justify-center items-center md:items-start mt-8 md:mt-0 bg-whiteBg">
+        <div className="w-full md:w-1/2 xl:w-3/5 flex flex-col grow gap-2 justify-center items-center md:items-start mt-8 md:mt-0 bg-whiteBg">
           <div className="flex flex-col-reverse justify-center items-center md:items-start md:ms-20 xl:ms-72">
             <h1 className="text-textBlack text-4xl font-bold">Lucas Capdevila</h1>
             <h2 className="text-textBlack text-2xl font-bold">Fullstack Developer</h2>
