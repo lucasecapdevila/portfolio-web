@@ -79,7 +79,7 @@ const Menu = () => {
               alt="lucasecapdevila logo"
             />
           </Link>
-          <ul className="flex-grow ms-3 lg:ms-0 mt-20 space-y-2 md:space-y-4 font-medium text-lg">
+          <ul className="flex-grow ms-3 lg:ms-0 mt-10 space-y-2 md:space-y-4 font-medium text-lg">
             <li>
               <Link
                 to="/about"
