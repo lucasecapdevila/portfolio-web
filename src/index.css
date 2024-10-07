@@ -17,6 +17,12 @@ body{
   line-height: 1.75rem; /* 28px */
 }
 
+.cvBtn span:hover{
+  background-color: #61dbfb;
+  color: #F4F4F4;
+  transition: all 0.3s ease-in-out;
+}
+
 .contactoBtn span{
   background-color: #61dbfb;
   font-size: 1.25rem; /* 20px */
