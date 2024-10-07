@@ -68,14 +68,14 @@ const Menu = () => {
       <aside
         id="logo-sidebar"
         ref={sidebarRef}
-        className={`enlaces fixed h-screen top-0 left-0 z-40 w-64 md:w-80 transition-transform ${isSidebarOpen ? "translate-x-0" : "-translate-x-full"} lg:translate-x-0`}
+        className={`enlaces fixed h-screen top-0 left-0 z-40 w-60 md:w-80 transition-transform ${isSidebarOpen ? "translate-x-0" : "-translate-x-full"} lg:translate-x-0`}
         aria-label="Sidebar"
       >
         <div className="flex flex-col px-3 py-2 h-full overflow-y-auto bg-reactDarkBlue md:w-11/12 lg:w-1/3">
-          <Link to="/" className="flex mt-3 ms-3 md:me-24 lg:me-0">
+          <Link to="/" className="flex w-16 mt-3 ms-3 md:me-24 lg:me-0">
             <img
               src={logo}
-              className="size-16 me-3"
+              className="size-16 me-3 w-full"
               alt="lucasecapdevila logo"
             />
           </Link>
@@ -83,7 +83,7 @@ const Menu = () => {
             <li>
               <Link
                 to="/about"
-                className="flex items-center text-xl p-2 ps-0 text-textBlack rounded-lg dark:text-white dark:hover:bg-gray-700 group lg:justify-center"
+                className="inline-flex items-center text-xl p-2 ps-0 text-textBlack rounded-lg dark:text-white dark:hover:bg-gray-700 group lg:justify-center"
               >
                 <div className="relative group">
                   <FontAwesomeIcon
@@ -100,7 +100,7 @@ const Menu = () => {
             <li>
               <Link
                 to="/skills"
-                className="flex items-center text-xl p-2 ps-0 text-textBlack rounded-lg dark:text-white dark:hover:bg-gray-700 group lg:justify-center"
+                className="inline-flex items-center text-xl p-2 ps-0 text-textBlack rounded-lg dark:text-white dark:hover:bg-gray-700 group lg:justify-center"
               >
                 <div className="relative group">
                   <FontAwesomeIcon
@@ -117,7 +117,7 @@ const Menu = () => {
             <li>
               <Link
                 to="/projects"
-                className="flex items-center text-xl p-2 ps-0 text-textBlack rounded-lg dark:text-white dark:hover:bg-gray-700 group lg:justify-center"
+                className="inline-flex items-center text-xl p-2 ps-0 text-textBlack rounded-lg dark:text-white dark:hover:bg-gray-700 group lg:justify-center"
               >
                 <div className="relative group">
                   <FontAwesomeIcon
@@ -134,7 +134,7 @@ const Menu = () => {
             <li>
               <Link
                 to="/contact"
-                className="flex items-center text-xl p-2 ps-0 text-textBlack rounded-lg dark:text-white dark:hover:bg-gray-700 group lg:justify-center"
+                className="inline-flex items-center text-xl p-2 ps-0 text-textBlack rounded-lg dark:text-white dark:hover:bg-gray-700 group lg:justify-center"
               >
                 <div className="relative group">
                   <FontAwesomeIcon
@@ -151,7 +151,7 @@ const Menu = () => {
             {/* <li>
               <Link
                 to="/"
-                className="flex items-center text-xl p-2 ps-0 text-textBlack rounded-lg dark:text-white dark:hover:bg-gray-700 group"
+                className="inline-flex items-center text-xl p-2 ps-0 text-textBlack rounded-lg dark:text-white dark:hover:bg-gray-700 group"
               >
                 <FontAwesomeIcon icon={faFlag} className="text-2xl" />
                 <span className="ms-4">EN/ES</span>
@@ -160,7 +160,7 @@ const Menu = () => {
             <li>
               <Link
                 to="/"
-                className="flex items-center text-xl p-2 ps-0 text-textBlack rounded-lg dark:text-white dark:hover:bg-gray-700 group"
+                className="inline-flex items-center text-xl p-2 ps-0 text-textBlack rounded-lg dark:text-white dark:hover:bg-gray-700 group"
               >
                 <FontAwesomeIcon className="text-2xl me-4" icon={faSun} />
                 <FontAwesomeIcon icon={faMoon} className="text-2xl" />
@@ -168,11 +168,11 @@ const Menu = () => {
               </Link>
             </li> */}
           </ul>
-          <ul className="ms-3 lg:ms-0 md:columns-2 lg:columns-1 space-y-4 font-medium text-lg">
+          <ul className="ms-3 lg:ms-0 md:columns-2 lg:columns-1 space-y-3 font-medium text-lg">
             <li>
               <Link
                 to="mailto:lcapdevila60@gmail.com?subject=FullStack Portfolio&body=Hola ! Vi tu portfolio y me interesan tus servicios."
-                className="flex items-center text-xl p-2 ps-0 text-textBlack rounded-lg dark:text-white dark:hover:bg-gray-700 group lg:justify-center hvr-pop"
+                className="inline-flex items-center text-xl p-2 ps-0 text-textBlack rounded-lg dark:text-white dark:hover:bg-gray-700 group lg:justify-center hvr-pop"
               >
                 <FontAwesomeIcon icon={faEnvelope} className="text-3xl" />
               </Link>
@@ -180,7 +180,7 @@ const Menu = () => {
             <li>
               <Link
                 to="https://www.linkedin.com/in/lucasecapdevila/"
-                className="flex items-center text-xl p-2 ps-0 text-textBlack rounded-lg dark:text-white dark:hover:bg-gray-700 group lg:justify-center hvr-pop"
+                className="inline-flex items-center text-xl p-2 ps-0 text-textBlack rounded-lg dark:text-white dark:hover:bg-gray-700 group lg:justify-center hvr-pop"
                 target="_blank"
               >
                 <FontAwesomeIcon icon={faLinkedin} className="text-3xl" />
@@ -190,7 +190,7 @@ const Menu = () => {
               <Link
                 to="https://github.com/lucasecapdevila"
                 target="_blank"
-                className="flex items-center text-xl p-2 ps-0 text-textBlack rounded-lg dark:text-white dark:hover:bg-gray-700 group lg:justify-center hvr-pop"
+                className="inline-flex items-center text-xl p-2 ps-0 text-textBlack rounded-lg dark:text-white dark:hover:bg-gray-700 group lg:justify-center hvr-pop"
               >
                 <FontAwesomeIcon icon={faGithub} className="text-3xl" />
               </Link>
@@ -199,7 +199,7 @@ const Menu = () => {
               <Link
                 to="https://www.instagram.com/lucasecapdevila/"
                 target="_blank"
-                className="flex items-center text-xl p-2 ps-0 text-textBlack rounded-lg dark:text-white dark:hover:bg-gray-700 group lg:justify-center hvr-pop"
+                className="inline-flex items-center text-xl p-2 ps-0 text-textBlack rounded-lg dark:text-white dark:hover:bg-gray-700 group lg:justify-center hvr-pop"
               >
                 <FontAwesomeIcon icon={faInstagram} className="text-3xl" />
               </Link>
