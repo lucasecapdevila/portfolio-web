@@ -79,7 +79,7 @@ const Menu = () => {
               alt="lucasecapdevila logo"
             />
           </Link>
-          <ul className="flex-grow ms-3 lg:ms-0 mt-10 space-y-2 md:space-y-4 font-medium text-lg">
+          <ul className="lg:text-center flex-grow ms-3 lg:ms-0 mt-10 space-y-2 md:space-y-4 font-medium text-lg">
             <li>
               <Link
                 to="/about"
@@ -168,7 +168,7 @@ const Menu = () => {
               </Link>
             </li> */}
           </ul>
-          <ul className="ms-3 lg:ms-0 md:columns-2 lg:columns-1 space-y-3 font-medium text-lg">
+          <ul className="ms-3 lg:ms-0 md:columns-2 lg:columns-1 lg:text-center space-y-3 font-medium text-lg">
             <li>
               <Link
                 to="mailto:lcapdevila60@gmail.com?subject=FullStack Portfolio&body=Hola ! Vi tu portfolio y me interesan tus servicios."

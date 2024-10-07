@@ -5,7 +5,7 @@ import { Link } from "react-router-dom"
 
 const Home = () => {
   return (
-    <main className="min-h-[90vh]">
+    <main className="min-h-[90vh] md:h-screen">
       <div className="relative flex flex-col md:flex-row h-full">
         <div className="w-full md:w-1/2 xl:w-2/5 h-2/5 md:h-full md:bg-reactLightBlue"></div>
         <img
