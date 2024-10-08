@@ -33,19 +33,19 @@ body{
 
 .cvBtn span{
   background-color: #F4F4F4;
-  color: #61dbfb;
-  font-size: 1.25rem; /* 20px */
-  line-height: 1.75rem; /* 28px */
+  color: #67a894;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .cvBtn span:hover{
-  background-color: #61dbfb;
+  background-color: #67a894;
   color: #F4F4F4;
   transition: all 0.3s ease-in-out;
 }
 
 .contactoBtn span{
-  background-color: #61dbfb;
+  background-color: #67a894;
   font-size: 1.25rem; /* 20px */
   line-height: 1.75rem; /* 28px */
 }

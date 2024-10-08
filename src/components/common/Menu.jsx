@@ -71,7 +71,7 @@ const Menu = () => {
         className={`enlaces fixed h-full top-0 left-0 z-40 w-60 md:w-80 transition-transform ${isSidebarOpen ? "translate-x-0" : "-translate-x-full"} lg:translate-x-0`}
         aria-label="Sidebar"
       >
-        <div className="flex flex-col px-3 py-2 h-full overflow-y-auto bg-reactDarkBlue md:w-11/12 lg:w-1/3">
+        <div className="flex flex-col px-3 py-2 h-full overflow-y-auto bg-mediumColor md:w-11/12 lg:w-1/3">
           <Link to="/" className="flex w-16 mt-3 ms-3 md:me-24 lg:me-0">
             <img
               src={logo}

@@ -12,10 +12,10 @@ export default {
       transparent: "transparent",
       current: "currentColor",
       whiteBg: "#f4f4f4",
-      reactLightBlue: "#61DBFB",
-      reactDarkBlue: "#57C5E2",
+      lightColor: "#c7dfd8",
+      mediumColor: "#97c3b6",
       textBlack: "#222222",
-      textWhite: "#F4F4F4",
+      textDarkColor: "#67a894",
     },
   },
   plugins: [
