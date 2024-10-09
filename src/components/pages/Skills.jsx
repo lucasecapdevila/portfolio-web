@@ -19,7 +19,7 @@ const Skills = () => {
         <p className="textos text-textBlack text-md">Estoy especializado en desarrollo web con HTML5, CSS3 y JavaScript junto con React.js. Entre otras herramientas y librerías que utilizo, se encuentran Bootstrap, Tailwind y una variada lista de librerías de React.</p>
         <p className="textos text-textBlack text-md">Además cuento con experiencia trabajando colaborativamente donde utilicé metodologías Agile como Scrum y Kanban, Trello y Jira para gestionar los proyectos y Git y GitHub como sistema de control de versiones.</p>
       </div>
-      <div className="overflow-hidden whitespace-nowrap mt-32">
+      <div className="overflow-hidden whitespace-nowrap mt-20">
         <div className="inline-block animate-marquee space-x-10">
           <img src={html} className="size-24 p-4 my-4 inline-block border-2 border-whiteBg shadow-logos" alt="html5" />
           <img src={css} className="size-24 p-4 my-4 inline-block border-2 border-whiteBg shadow-logos" alt="html5" />
@@ -33,8 +33,6 @@ const Skills = () => {
           <img src={figma} className="size-24 p-4 my-4 inline-block border-2 border-whiteBg shadow-logos" alt="html5" />
           <img src={git} className="size-24 p-4 my-4 inline-block border-2 border-whiteBg shadow-logos" alt="html5" />
           <img src={github} className="size-24 p-4 my-4 inline-block border-2 border-whiteBg shadow-logos" alt="html5" />
-
-          
         </div>
       </div>
     </main>
