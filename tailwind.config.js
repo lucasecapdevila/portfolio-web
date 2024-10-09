@@ -22,10 +22,11 @@ export default {
         marquee: {
           '0%': { transform: 'translateX(50%)' },
           '100%': { transform: 'translateX(-185%)' },
-        },
+        }
       },
       animation: {
         marquee: 'marquee 20s linear infinite',
+        'marquee-md': 'marquee 25s linear infinite',
       },
       boxShadow: {
         'logos': '0px 0px 15px 8px rgba(103,168,148,1)'
