@@ -17,6 +17,20 @@ export default {
       textBlack: "#222222",
       textDarkColor: "#67a894",
     },
+    extend: {
+      keyframes: {
+        marquee: {
+          '0%': { transform: 'translateX(50%)' },
+          '100%': { transform: 'translateX(-185%)' },
+        },
+      },
+      animation: {
+        marquee: 'marquee 20s linear infinite',
+      },
+      boxShadow: {
+        'logos': '0px 0px 15px 8px rgba(103,168,148,1)'
+      }
+    },
   },
   plugins: [
     flowbite.plugin(),
