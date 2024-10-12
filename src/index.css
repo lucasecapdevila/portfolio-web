@@ -50,6 +50,12 @@ body{
   line-height: 1.75rem; /* 28px */
 }
 
+.projectCard div{
+  @media screen and (min-width: 768px) {
+    justify-content: start;
+  }
+}
+
 /* Hovers */
 @-webkit-keyframes hvr-pop {
   50% {
