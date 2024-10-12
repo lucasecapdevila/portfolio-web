@@ -17,10 +17,10 @@ const CardProject = ({ proyecto }) => {
         })}
       </ul>
       <div className="flex justify-center items-center gap-4">
-        <Button className="w-full" color={"success"}>
+        <Button className="w-full bg-textDarkColor">
           <Link to={proyecto.repo} target="_blank">GitHub</Link>
         </Button>
-        <Button className="w-full" color={"success"}>
+        <Button className="w-full bg-textDarkColor">
           <Link to={proyecto.deploy} target="_blank">Deploy</Link>
         </Button>
       </div>
