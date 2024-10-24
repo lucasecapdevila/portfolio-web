@@ -1,6 +1,6 @@
 import { Button } from "flowbite-react"
 import imagen from "../../assets/lucas.jpg"
-import pdf from "/public/CVLucasCapdevila-prog.pdf"
+import pdf from "/public/CVlucasCapdevila.pdf"
 import { Link } from "react-router-dom"
 
 const Home = () => {
