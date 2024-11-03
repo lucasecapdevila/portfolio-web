@@ -4,6 +4,7 @@ import Menu from "../common/Menu"
 import About from "../pages/About";
 import Skills from "../pages/Skills";
 import Projects from "../pages/projects/Projects";
+import Contact from "../pages/Contact";
 
 export async function getStaticProps() {
   return {
@@ -20,6 +21,7 @@ const AppRouter = () => {
         <Route path="/about" element={<About />} />
         <Route path="/skills" element={<Skills />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>
   )
