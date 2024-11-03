@@ -17,7 +17,7 @@ const Projects = () => {
           <CardProject key={proyecto.id} proyecto={proyecto} />
         ))}
       </div>
-      <div className="flex justify-center xl:justify-end xl:mt-5">
+      {/* <div className="flex justify-center xl:justify-end xl:mt-5">
         <Link to='/' className="text-lg">
           <Button pill color={'success'} className="my-4 inline">
             <p className="textos text-whiteBg text-lg">Ver más proyectos</p>
@@ -26,7 +26,7 @@ const Projects = () => {
             </span>
           </Button>
         </Link>
-      </div>
+      </div> */}
     </main>
   )
 }
