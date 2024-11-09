@@ -18,7 +18,7 @@ const About = () => {
               data-aos-delay="300"
               data-aos-duration="1800"
             >
-              <h1 className="titulos text-textDarkColor text-4xl text-center md:text-left font-bold">
+              <h1 className="titulos text-textDarkColor text-4xl text-center md:text-left font-bold uppercase">
                 Sobre mí
               </h1>
               <p className="textos text-textBlack text-md lg:text-lg mt-2">
