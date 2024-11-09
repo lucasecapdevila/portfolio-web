@@ -67,11 +67,7 @@ const Contact = () => {
               minLength: {
                 value: 3,
                 message: "El nombre debe tener al menos 3 caracteres",
-              },
-              pattern: {
-                value: /^[a-zA-Z ]+$/gm,
-                message: "El nombre no puede llevar carácteres ni números.",
-              },
+              }
             })}
             helperText={
               <>

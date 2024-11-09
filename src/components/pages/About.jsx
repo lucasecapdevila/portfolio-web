@@ -22,8 +22,7 @@ const About = () => {
                 Sobre mí
               </h1>
               <p className="textos text-textBlack text-md lg:text-lg mt-2">
-                Me llamo Lucas Capdevila, soy de Tucumán, Argentina. Soy un
-                estudiante de la carrera de la Tecnicatura Universitaria en
+                Me llamo Lucas Capdevila, soy de Tucumán, Argentina. Estudiante de la carrera Tecnicatura Universitaria en
                 Programación de la Universidad Tecnológica Nacional.
               </p>
               <p className="textos text-textBlack text-md lg:text-lg my-2">
