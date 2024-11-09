@@ -15,7 +15,7 @@ const Skills = () => {
   return (
     <main className="min-h-[90vh] max-w-[100vw] md:h-screen px-4 lg:ps-32 py-10">
       <div className="flex flex-col justify-center items-center gap-4 my-4">
-        <h1 className="titulos text-textDarkColor text-4xl lg:text-5xl font-bold uppercase">Habilidades</h1>
+        <h1 className="titulos text-textDarkColor text-4xl md:text-5xl font-bold uppercase">Habilidades</h1>
         <p className="textos text-textBlack text-md lg:text-lg lg:mt-10">Estoy especializado en desarrollo web con HTML5, CSS3 y JavaScript junto con React.js. Entre otras herramientas y librerías que utilizo, se encuentran Bootstrap, Tailwind y una variada lista de librerías de React.</p>
         <p className="textos text-textBlack text-md lg:text-lg">Además cuento con experiencia trabajando colaborativamente donde utilicé metodologías Agile como Scrum y Kanban, Trello y Jira para gestionar los proyectos y Git y GitHub como sistema de control de versiones.</p>
       </div>
