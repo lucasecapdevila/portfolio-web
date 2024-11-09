@@ -43,7 +43,7 @@ const Contact = () => {
             ¿Quieres saber más de mí?
           </h2>
           <p className="textos text-textBlack text-md lg:text-lg">
-            Estoy disponible a nuevas oportunidades y colaboraciones! Si estás
+            Estoy disponible para nuevas oportunidades y colaboraciones! Si estás
             buscando alguien que pueda aportar nuevas ideas a tus proyectos y
             obtener resultados significativos, no dudes en ponerte en contacto
             conmigo.
