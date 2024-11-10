@@ -20,10 +20,10 @@ import uk from "../../assets/uk.svg";
 import { Link } from "react-router-dom";
 import { useEffect, useRef, useState } from "react";
 import { Dropdown, DropdownItem } from "flowbite-react";
-import { useTranslation } from 'react-i18next'
+import { useTranslation } from "react-i18next";
 
 const Menu = () => {
-  const [ t, i18n ] = useTranslation("global")
+  const [t, i18n] = useTranslation("global");
 
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const sidebarRef = useRef(null);
@@ -116,10 +116,10 @@ const Menu = () => {
                     className="text-2xl relative"
                   />
                   <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-max opacity-0 group-hover:opacity-100 transition-opacity bg-gray-800 text-white text-sm rounded px-2 py-1">
-                    Habilidades
+                    {t("menu.skills")}
                   </span>
                 </div>
-                <span className="ms-4 lg:hidden">Habilidades</span>
+                <span className="ms-4 lg:hidden">{t("menu.skills")}</span>
               </Link>
             </li>
             <li>
@@ -133,10 +133,10 @@ const Menu = () => {
                     className="text-2xl relative"
                   />
                   <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-max opacity-0 group-hover:opacity-100 transition-opacity bg-gray-800 text-white text-sm rounded px-2 py-1">
-                    Proyectos
+                    {t("menu.projects")}
                   </span>
                 </div>
-                <span className="ms-4 lg:hidden">Proyectos</span>
+                <span className="ms-4 lg:hidden">{t("menu.projects")}</span>
               </Link>
             </li>
             <li>
@@ -150,18 +150,31 @@ const Menu = () => {
                     className="text-2xl relative"
                   />
                   <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-max opacity-0 group-hover:opacity-100 transition-opacity bg-gray-800 text-white text-sm rounded px-2 py-1">
-                    Contacto
+                    {t("menu.contact")}
                   </span>
                 </div>
-                <span className="ms-4 lg:hidden">Contacto</span>
+                <span className="ms-4 lg:hidden">{t("menu.contact")}</span>
               </Link>
             </li>
             <li>
               <span className="inline-flex items-center text-xl p-2 ps-0 text-textBlack rounded-lg dark:text-white dark:hover:bg-gray-700 group lg:justify-center cursor-pointer">
-                <Dropdown dismissOnClick={false} placement="right" renderTrigger={() => <FontAwesomeIcon icon={faGlobeAmericas} className="text-2xl relative"/>}>
-                  <DropdownItem onClick={() => i18n.changeLanguage("es")}><img src={spain} className="w-7" alt="Spain flag" /></DropdownItem>
+                <Dropdown
+                  dismissOnClick={false}
+                  placement="right"
+                  renderTrigger={() => (
+                    <FontAwesomeIcon
+                      icon={faGlobeAmericas}
+                      className="text-2xl relative"
+                    />
+                  )}
+                >
+                  <DropdownItem onClick={() => i18n.changeLanguage("es")}>
+                    <img src={spain} className="w-7" alt="Spain flag" />
+                  </DropdownItem>
                   <Dropdown.Divider />
-                  <DropdownItem onClick={() => i18n.changeLanguage("en")}><img src={uk} className="w-7" alt="UK flag" /></DropdownItem>
+                  <DropdownItem onClick={() => i18n.changeLanguage("en")}>
+                    <img src={uk} className="w-7" alt="UK flag" />
+                  </DropdownItem>
                 </Dropdown>
                 <span className="ms-4 lg:hidden">EN/ES</span>
               </span>
