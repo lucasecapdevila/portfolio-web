@@ -3,6 +3,8 @@ import {
   faEnvelope,
   faFlag,
   faFolder,
+  faGlobe,
+  faGlobeAmericas,
   faMoon,
   faPhone,
   faScrewdriverWrench,
@@ -15,12 +17,15 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import logo from "../../assets/logo-black2.png";
+import spain from "../../assets/spain.svg";
+import uk from "../../assets/uk.svg";
 import { Link } from "react-router-dom";
 import { useEffect, useRef, useState } from "react";
+import { Dropdown, DropdownItem } from "flowbite-react";
 
 const Menu = () => {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false)
-  const sidebarRef = useRef(null)
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const sidebarRef = useRef(null);
 
   const toggleSidebar = () => {
     setIsSidebarOpen((prev) => !prev);
@@ -28,14 +33,14 @@ const Menu = () => {
 
   useEffect(() => {
     const handleClickOutside = (e) => {
-      if(sidebarRef.current && !sidebarRef.current.contains(e.target)) {
-        setIsSidebarOpen(false)
+      if (sidebarRef.current && !sidebarRef.current.contains(e.target)) {
+        setIsSidebarOpen(false);
       }
-    }
+    };
 
-    document.addEventListener("mousedown", handleClickOutside)
-    return () => document.removeEventListener("mousedown", handleClickOutside)
-  }, [sidebarRef])
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, [sidebarRef]);
 
   return (
     <>
@@ -68,7 +73,9 @@ const Menu = () => {
       <aside
         id="logo-sidebar"
         ref={sidebarRef}
-        className={`enlaces fixed h-full top-0 left-0 z-40 w-60 md:w-80 transition-transform ${isSidebarOpen ? "translate-x-0" : "-translate-x-full"} lg:translate-x-0`}
+        className={`enlaces fixed h-full top-0 left-0 z-40 w-60 md:w-80 transition-transform ${
+          isSidebarOpen ? "translate-x-0" : "-translate-x-full"
+        } lg:translate-x-0`}
         aria-label="Sidebar"
       >
         <div className="flex flex-col px-3 py-2 h-full overflow-y-auto bg-mediumColor md:w-11/12 lg:w-1/3">
@@ -148,15 +155,15 @@ const Menu = () => {
                 <span className="ms-4 lg:hidden">Contacto</span>
               </Link>
             </li>
-            {/* <li>
-              <Link
-                to="/"
-                className="inline-flex items-center text-xl p-2 ps-0 text-textBlack rounded-lg dark:text-white dark:hover:bg-gray-700 group"
-              >
-                <FontAwesomeIcon icon={faFlag} className="text-2xl" />
-                <span className="ms-4">EN/ES</span>
-              </Link>
+            <li>
+              <button className="inline-flex items-center text-xl p-2 ps-0 text-textBlack rounded-lg dark:text-white dark:hover:bg-gray-700 group lg:justify-center">
+                <Dropdown dismissOnClick={false} placement="right" renderTrigger={() => <FontAwesomeIcon icon={faGlobeAmericas} className="text-2xl relative"/>}>
+                  <DropdownItem><img src={spain} className="w-7" alt="Spain flag" /></DropdownItem>
+                  <DropdownItem><img src={uk} className="w-7" alt="UK flag" /></DropdownItem>
+                </Dropdown>
+              </button>
             </li>
+            {/* 
             <li>
               <Link
                 to="/"
