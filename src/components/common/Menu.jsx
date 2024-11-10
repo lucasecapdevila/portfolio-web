@@ -1,9 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faEnvelope,
-  faFlag,
   faFolder,
-  faGlobe,
   faGlobeAmericas,
   faMoon,
   faPhone,
@@ -22,8 +20,11 @@ import uk from "../../assets/uk.svg";
 import { Link } from "react-router-dom";
 import { useEffect, useRef, useState } from "react";
 import { Dropdown, DropdownItem } from "flowbite-react";
+import { useTranslation } from 'react-i18next'
 
 const Menu = () => {
+  const [ t, i18n ] = useTranslation("global")
+
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const sidebarRef = useRef(null);
 
@@ -98,10 +99,10 @@ const Menu = () => {
                     className="text-2xl relative"
                   />
                   <span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 w-max opacity-0 group-hover:opacity-100 transition-opacity bg-gray-800 text-white text-sm rounded px-2 py-1">
-                    Sobre mí
+                    {t("menu.about-me")}
                   </span>
                 </div>
-                <span className="ms-4 lg:hidden">Sobre mí</span>
+                <span className="ms-4 lg:hidden">{t("menu.about-me")}</span>
               </Link>
             </li>
             <li>
@@ -156,12 +157,14 @@ const Menu = () => {
               </Link>
             </li>
             <li>
-              <button className="inline-flex items-center text-xl p-2 ps-0 text-textBlack rounded-lg dark:text-white dark:hover:bg-gray-700 group lg:justify-center">
+              <span className="inline-flex items-center text-xl p-2 ps-0 text-textBlack rounded-lg dark:text-white dark:hover:bg-gray-700 group lg:justify-center cursor-pointer">
                 <Dropdown dismissOnClick={false} placement="right" renderTrigger={() => <FontAwesomeIcon icon={faGlobeAmericas} className="text-2xl relative"/>}>
-                  <DropdownItem><img src={spain} className="w-7" alt="Spain flag" /></DropdownItem>
-                  <DropdownItem><img src={uk} className="w-7" alt="UK flag" /></DropdownItem>
+                  <DropdownItem onClick={() => i18n.changeLanguage("es")}><img src={spain} className="w-7" alt="Spain flag" /></DropdownItem>
+                  <Dropdown.Divider />
+                  <DropdownItem onClick={() => i18n.changeLanguage("en")}><img src={uk} className="w-7" alt="UK flag" /></DropdownItem>
                 </Dropdown>
-              </button>
+                <span className="ms-4 lg:hidden">EN/ES</span>
+              </span>
             </li>
             {/* 
             <li>
