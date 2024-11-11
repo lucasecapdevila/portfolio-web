@@ -4,5 +4,10 @@
     "skills": "Skills",
     "projects": "Projects",
     "contact": "Contact"
+  },
+  "homepage": {
+    "introduction": "I'm a passionate web developer specializing in the MERN Stack, experienced in creating web applications using React, Node, Express, and MongoDB. I'm highly interested in learning new technologies to implement in my projects.",
+    "cv-button": "Download CV",
+    "contact-button": "Contact Me"
   }
 }

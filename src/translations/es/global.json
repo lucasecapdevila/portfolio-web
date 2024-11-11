@@ -4,5 +4,10 @@
     "skills": "Habilidades",
     "projects": "Proyectos",
     "contact": "Contacto"
+  },
+  "homepage": {
+    "introduction": "Soy un apasionado desarrollador web especializado en Stack MERN con experiencia creando aplicaciones web con React, Node, Express y MongoDB. Estoy muy interesado en aprender nuevas tecnologías para implementar en mis proyectos.",
+    "cv-button": "Descargar CV",
+    "contact-button": "Contacto"
   }
 }

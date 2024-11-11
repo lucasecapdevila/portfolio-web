@@ -6,7 +6,7 @@ import global_es from "./es/global.json";
 
 i18next.use(LanguageDetector).use(initReactI18next).init({
   debug: true,
-  lng: 'es',
+  lng: localStorage.getItem("i18nextLng") || 'es',
   resources: {
     es: { global: global_es },
     en: { global: global_en },
