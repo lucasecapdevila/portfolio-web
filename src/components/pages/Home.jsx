@@ -26,7 +26,7 @@ const Home = () => {
             </h2>
           </div>
           <p className="text-textBlack text-lg md:text-xl text-center md:text-left font-normal content-end px-2 md:ps-0 md:pe-2 mt-4 md:ms-20 md:mb-20 xl:ms-72 xl:mb-20">
-            {t("homepage.introduction")}
+            {t("home.introduction")}
           </p>
           <div className="w-full md:w-2/3 md:ms-20 xl:ms-56 px-4 xl:px-0 md:px-0 xl:flex justify-start">
             <a
@@ -39,7 +39,7 @@ const Home = () => {
                 outline
                 className="cvBtn w-full border-4 border-textDarkColor p-0 text-textDarkColor font-bold"
               >
-                {t("homepage.cv-button")}
+                {t("home.cv-button")}
               </Button>
             </a>
             <Link className="hidden md:inline w-full md:w-2/3 xl:w-2/4 md:ms-16 xl:ms-10 px-4 mt-4 justify-center">
@@ -48,7 +48,7 @@ const Home = () => {
                 pill
                 className="contactoBtn w-full bg-textDarkColor border-4 text-whiteBg font-bold"
               >
-                {t("homepage.contact-button")}
+                {t("home.contact-button")}
               </Button>
             </Link>
           </div>

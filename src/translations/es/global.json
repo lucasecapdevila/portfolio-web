@@ -5,9 +5,16 @@
     "projects": "Proyectos",
     "contact": "Contacto"
   },
-  "homepage": {
+  "home": {
     "introduction": "Soy un apasionado desarrollador web especializado en Stack MERN con experiencia creando aplicaciones web con React, Node, Express y MongoDB. Estoy muy interesado en aprender nuevas tecnologías para implementar en mis proyectos.",
     "cv-button": "Descargar CV",
     "contact-button": "Contacto"
+  },
+  "projects": {
+    "title": "Proyectos",
+    "subtitle": "A continuación te presento algunos de los proyectos que he creado a partir de HTML y más recientemente, con React.",
+    "project_1_description": "Para este proyecto, diseñé y desarrollé mi portfolio web con la finalidad de mostrar mis habilidades y proyectos.",
+    "project_2_description": "Proyecto final para el curso de FullStack Developer de Rolling Code School realizado colaborativamente. Este proyecto es una página que sirve como sistema de gestión de un hotel que permite a los usuarios registrados reservar habitaciones disponibles y al administrador gestionar las habitaciones y usuarios.",
+    "project_3_description": "Proyecto final para el curso de React Avanzado de Rolling Code School realizado colaborativamente. El objetivo de este proyecto fue desarrollar una plataforma integral de gestión para servir a tres tipos de usuarios: administradores, médicos y pacientes."
   }
 }

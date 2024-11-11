@@ -1,7 +1,10 @@
 import { Button, Card } from "flowbite-react"
+import { useTranslation } from "react-i18next"
 import { Link } from "react-router-dom"
 
 const CardProject = ({ proyecto }) => {
+  const { t } = useTranslation("global");
+
   return (
     <Card className="projectCard max-w-sm lg:max-w-md xl:max-w-lg">
       <img src={proyecto.imagen} alt={proyecto.titulo}/>
@@ -9,7 +12,7 @@ const CardProject = ({ proyecto }) => {
         {proyecto.titulo}
       </h5>
       <p className="textos font-normal text-textBlack">
-        {proyecto.descripcion}
+        {t(`projects.project_${proyecto.id}_description`)}
       </p>
       <ul className="flex flex-wrap">
         {proyecto.tecnologias.map((tecnologia) => {

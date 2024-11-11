@@ -5,9 +5,16 @@
     "projects": "Projects",
     "contact": "Contact"
   },
-  "homepage": {
+  "home": {
     "introduction": "I'm a passionate web developer specializing in the MERN Stack, experienced in creating web applications using React, Node, Express, and MongoDB. I'm highly interested in learning new technologies to implement in my projects.",
     "cv-button": "Download CV",
     "contact-button": "Contact Me"
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "Here are some of the projects I have created, starting with HTML and, more recently, with React.",
+    "project_1_description": "For this project, I designed and developed my web portfolio to showcase my skills and projects.",
+    "project_2_description": "Final project for the FullStack Developer course at Rolling Code School, created collaboratively. This project is a hotel management system website that allows registered users to book available rooms and enables the administrator to manage rooms and users.",
+    "project_3_description": "Final project for the Advanced React course at Rolling Code School, developed collaboratively. The objective of this project was to create a comprehensive management platform to serve three types of users: administrators, doctors, and patients."
   }
 }
