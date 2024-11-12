@@ -45,5 +45,10 @@
     "form_input_3_minLength": "El mensaje debe tener al menos 10 caracteres.",
     "form_input_3_maxLength": "Debe ingresar como máximo 1000 carácteres para el mensaje.",
     "button": "Enviar"
+  },
+  "skills": {
+    "title": "Habilidades",
+    "description": "Como desarrollador, estoy especializado en desarrollo web con HTML5, CSS3 y JavaScript junto con React.js. Entre otras herramientas y librerías que utilizo, se encuentran Bootstrap, Tailwind y una variada lista de librerías de React.",
+    "text": "Además cuento con experiencia trabajando colaborativamente donde utilicé metodologías Agile como Scrum y Kanban, Trello y Jira para gestionar los proyectos y Git y GitHub como sistema de control de versiones."
   }
 }

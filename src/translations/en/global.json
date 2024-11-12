@@ -45,5 +45,10 @@
     "form_input_3_minLength": "Your message must have at least 10 characters.",
     "form_input_3_maxLength": "You must enter a maximum of 1000 characters for the message.",
     "button": "Submit message"
+  },
+  "skills": {
+    "title": "Skills",
+    "description": "As a developer, I specialize in web development using HTML5, CSS3, and JavaScript along with React.js. Among other tools and libraries I use are Bootstrap, Tailwind, and a diverse list of React libraries.",
+    "text": "I also have experience working collaboratively, where I used Agile methodologies like Scrum and Kanban, as well as Trello and Jira to manage projects, and Git and GitHub as version control systems."
   }
 }
