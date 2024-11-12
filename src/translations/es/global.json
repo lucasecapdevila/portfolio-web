@@ -16,5 +16,26 @@
     "project_1_description": "Para este proyecto, diseñé y desarrollé mi portfolio web con la finalidad de mostrar mis habilidades y proyectos.",
     "project_2_description": "Proyecto final para el curso de FullStack Developer de Rolling Code School realizado colaborativamente. Este proyecto es una página que sirve como sistema de gestión de un hotel que permite a los usuarios registrados reservar habitaciones disponibles y al administrador gestionar las habitaciones y usuarios.",
     "project_3_description": "Proyecto final para el curso de React Avanzado de Rolling Code School realizado colaborativamente. El objetivo de este proyecto fue desarrollar una plataforma integral de gestión para servir a tres tipos de usuarios: administradores, médicos y pacientes."
+  },
+  "contact": {
+    "title": "Contactame",
+    "subtitle": "¿Quieres saber más de mí?",
+    "text": "Estoy disponible para nuevas oportunidades y colaboraciones! Si estás buscando alguien que pueda aportar nuevas ideas a tus proyectos y obtener resultados significativos, no dudes en ponerte en contacto conmigo.",
+    "form_label_1": "Nombre",
+    "form_input_1": "Ingresa tu nombre",
+    "form_input_1_required": "El nombre es obligatorio.",
+    "form_input_1_minLength": "El nombre debe tener al menos 3 caracteres.",
+    "form_input_1_pattern": "El nombre no puede llevar carácteres especiales ni números.",
+    "form_label_2": "Correo Electrónico",
+    "form_input_2": "Ingresa tu correo electrónico",
+    "form_input_2_required": "El email es obligatorio.",
+    "form_input_2_minLength": "El email debe contener al menos 4 carácteres.",
+    "form_input_2_pattern": "Ingrese una dirección de correo electrónico válida.",
+    "form_label_3": "Mensaje",
+    "form_input_3": "Escribe tu mensaje...",
+    "form_input_3_required": "El mensaje es obligatorio.",
+    "form_input_3_minLength": "El mensaje debe tener al menos 10 caracteres.",
+    "form_input_3_maxLength": "Debe ingresar como máximo 1000 carácteres para el mensaje.",
+    "button": "Enviar"
   }
 }

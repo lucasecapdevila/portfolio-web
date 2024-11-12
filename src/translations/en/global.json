@@ -16,5 +16,26 @@
     "project_1_description": "For this project, I designed and developed my web portfolio to showcase my skills and projects.",
     "project_2_description": "Final project for the FullStack Developer course at Rolling Code School, created collaboratively. This project is a hotel management system website that allows registered users to book available rooms and enables the administrator to manage rooms and users.",
     "project_3_description": "Final project for the Advanced React course at Rolling Code School, developed collaboratively. The objective of this project was to create a comprehensive management platform to serve three types of users: administrators, doctors, and patients."
+  },
+  "contact": {
+    "title": "Contact Me",
+    "subtitle": "Get in touch !",
+    "text": "I'm available for new opportunities and collaborations! If you're looking for someone who can bring fresh ideas to your projects and achieve meaningful results, don't hesitate to reach out to me.",
+    "form_label_1": "Name",
+    "form_input_1": "Enter your name",
+    "form_input_1_required": "Your name is required.",
+    "form_input_1_minLength": "Your name must have at least 3 characters.",
+    "form_input_1_pattern": "Your name cannot contain special characters or numbers.",
+    "form_label_2": "Email",
+    "form_input_2": "Enter your email",
+    "form_input_2_required": "Your email is required.",
+    "form_input_2_minLength": "Your email must have at least 4 characters.",
+    "form_input_2_pattern": "Enter a valid email address.",
+    "form_label_3": "Message",
+    "form_input_3": "Type your message...",
+    "form_input_3_required": "Your message is required.",
+    "form_input_3_minLength": "Your message must have at least 10 characters.",
+    "form_input_3_maxLength": "You must enter a maximum of 1000 characters for the message.",
+    "button": "Submit message"
   }
 }
