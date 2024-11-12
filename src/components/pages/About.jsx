@@ -1,5 +1,8 @@
+import { useTranslation } from "react-i18next";
 import imagen from "../../assets/lucas2.jpg";
 const About = () => {
+  const { t } = useTranslation("global");
+
   return (
     <>
       <main className="min-h-[90vh] md:h-screen px-4 lg:ps-40 py-10">
@@ -19,16 +22,13 @@ const About = () => {
               data-aos-duration="1800"
             >
               <h1 className="titulos text-textDarkColor text-4xl text-center md:text-left font-bold uppercase">
-                Sobre mí
+                {t("about-me.title")}
               </h1>
               <p className="textos text-textBlack text-md lg:text-lg mt-2">
-                Me llamo Lucas Capdevila, soy de Tucumán, Argentina. Estudiante de la carrera Tecnicatura Universitaria en
-                Programación de la Universidad Tecnológica Nacional.
+                {t("about-me.text-1")}
               </p>
               <p className="textos text-textBlack text-md lg:text-lg my-2">
-                Actualmente me encuentro realizando trabajos como FullStack Web
-                Developer con experiencia en frameworks como React, Node.js,
-                MongoDB Y Express.js
+                {t("about-me.text-2")}
               </p>
             </div>
             <div
@@ -38,17 +38,13 @@ const About = () => {
               data-aos-duration="1800"
             >
               <h2 className="titulos text-textDarkColor text-3xl font-bold">
-                Otros intereses
+                {t("about-me.subtitle")}
               </h2>
               <p className="textos text-textBlack text-md lg:text-lg mt-2">
-                Si bien me apasiona la programación y estoy constantemente
-                aprendiendo nuevas tecnologías para el desarrollo FullStack,
-                también tengo otros intereses.
+                {t("about-me.text-3")}
               </p>
               <p className="textos text-textBlack text-md lg:text-lg mt-2">
-                Entre mis actividades favoritas están ver películas, los deportes,
-                pasar tiempo con mis amigos y escuchar música, siempre con un mate
-                a mano 🧉
+                {t("about-me.text-4")}
               </p>
           </div>
           </div>

@@ -10,6 +10,14 @@
     "cv-button": "Descargar CV",
     "contact-button": "Contacto"
   },
+  "about-me": {
+    "title": "Sobre mí",
+    "text-1": "Me llamo Lucas Capdevila, soy de Tucumán, Argentina. Estudiante de la carrera Tecnicatura Universitaria en Programación de la Universidad Tecnológica Nacional.",
+    "text-2": "Actualmente me encuentro realizando trabajos como FullStack Web Developer con experiencia en frameworks como React, Node.js, MongoDB Y Express.js",
+    "subtitle": "Otros intereses",
+    "text-3": "Si bien me apasiona la programación y estoy constantemente aprendiendo nuevas tecnologías para el desarrollo FullStack, también tengo otros intereses.",
+    "text-4": "Entre mis actividades favoritas están ver películas, los deportes, pasar tiempo con mis amigos y escuchar música, siempre con un mate a mano 🧉"
+  },
   "projects": {
     "title": "Proyectos",
     "subtitle": "A continuación te presento algunos de los proyectos que he creado a partir de HTML y más recientemente, con React.",

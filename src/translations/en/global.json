@@ -10,6 +10,14 @@
     "cv-button": "Download CV",
     "contact-button": "Contact Me"
   },
+  "about-me": {
+    "title": "About me",
+    "text-1": "My name is Lucas Capdevila. I'm from Tucumán, Argentina. I'm a student in Programming (bachelor degree) at the Universidad Tecnológica Nacional.",
+    "text-2": "I am currently working on projects as a Full Stack Web Developer with experience in frameworks such as React, Node.js, MongoDB, and Express.js.",
+    "subtitle": "Other interests",
+    "text-3": "Although I'm passionate about programming and constantly learning new technologies for FullStack development, I also have other interests.",
+    "text-4": "Among my favorite activities are watching movies, sports, spending time with friends, and listening to music, always with a mate in hand 🧉"
+  },
   "projects": {
     "title": "Projects",
     "subtitle": "Here are some of the projects I have created, starting with HTML and, more recently, with React.",
