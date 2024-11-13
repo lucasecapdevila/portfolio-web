@@ -159,6 +159,7 @@ const Menu = () => {
             <li>
               <span className="inline-flex items-center text-xl p-2 ps-0 text-textBlack rounded-lg dark:text-white dark:hover:bg-gray-700 group lg:justify-center cursor-pointer">
                 <Dropdown
+                  className="bg-lightColor"
                   dismissOnClick={false}
                   placement="right"
                   renderTrigger={() => (
@@ -168,15 +169,14 @@ const Menu = () => {
                     />
                   )}
                 >
-                  <DropdownItem onClick={() => i18n.changeLanguage("es")}>
+                  <DropdownItem className="bg-lightColor" onClick={() => i18n.changeLanguage("es")}>
                     <img src={spain} className="w-7" alt="Spain flag" />
                   </DropdownItem>
-                  <Dropdown.Divider />
-                  <DropdownItem onClick={() => i18n.changeLanguage("en")}>
+                  <Dropdown.Divider className="bg-lightColor" />
+                  <DropdownItem className="bg-lightColor" onClick={() => i18n.changeLanguage("en")}>
                     <img src={uk} className="w-7" alt="UK flag" />
                   </DropdownItem>
                 </Dropdown>
-                <span className="ms-4 lg:hidden">EN/ES</span>
               </span>
             </li>
             {/* 
